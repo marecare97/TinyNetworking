@@ -8,15 +8,15 @@
 
 import Foundation
 
-public enum TinyNetworkingError: Swift.Error {
-    case noData(Response)
-    case statusCode(Response)
-    case decoding(Swift.Error, Response)
-    case underlying(Swift.Error, Response?)
+public enum HTTPError: Swift.Error {
+    case noData(HTTPResponse)
+    case statusCode(HTTPResponse)
+    case decoding(Swift.Error, HTTPResponse)
+    case networkLayer(Swift.Error, HTTPResponse?)
 }
 
-public extension TinyNetworkingError {
-    var response: Response? {
+public extension HTTPError {
+    var response: HTTPResponse? {
         switch self {
         case let .noData(response):
             return response
@@ -24,13 +24,13 @@ public extension TinyNetworkingError {
             return response
         case let .decoding(_, response):
             return response
-        case let .underlying(_, response):
+        case let .networkLayer(_, response):
             return response
         }
     }
 }
 
-extension TinyNetworkingError: LocalizedError {
+extension HTTPError: LocalizedError {
     public var errorDescription: String? {
         switch self {
         case .noData:
@@ -39,7 +39,7 @@ extension TinyNetworkingError: LocalizedError {
             return "Status code didn't fall within the given range."
         case .decoding:
             return "Failed to map data to a Decodable object."
-        case let .underlying(error, _):
+        case let .networkLayer(error, _):
             return error.localizedDescription
         }
     }

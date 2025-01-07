@@ -12,27 +12,27 @@ import Foundation
 import Combine
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-internal class TinyNetworkingPublisher<Output, Failure>: Publisher where Failure: Swift.Error {
-    private let callback: (AnySubscriber<Output, Failure>) -> URLSessionDataTask?
+internal class HTTPClientPublisher<Output, Failure>: Publisher where Failure: Swift.Error {
+    private let task: (AnySubscriber<Output, Failure>) -> Task<Void, Never>?
 
-    init(callback: @escaping (AnySubscriber<Output, Failure>) -> URLSessionDataTask?) {
-        self.callback = callback
+    init(task: @escaping (AnySubscriber<Output, Failure>) -> Task<Void, Never>?) {
+        self.task = task
     }
 
     func receive<S>(subscriber: S) where S: Subscriber, Failure == S.Failure, Output == S.Input {
-        let subscription = Subscription(subscriber: AnySubscriber(subscriber), callback: callback)
+        let subscription = Subscription(subscriber: AnySubscriber(subscriber), callback: task)
         subscriber.receive(subscription: subscription)
     }
 }
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-private extension TinyNetworkingPublisher {
+private extension HTTPClientPublisher {
     class Subscription: Combine.Subscription {
 
-        private let dataTask: URLSessionDataTask?
+        private let task: Task<Void, Never>?
 
-        init(subscriber: AnySubscriber<Output, Failure>, callback: @escaping (AnySubscriber<Output, Failure>) -> URLSessionDataTask?) {
-            dataTask = callback(subscriber)
+        init(subscriber: AnySubscriber<Output, Failure>, callback: @escaping (AnySubscriber<Output, Failure>) -> Task<Void, Never>?) {
+            task = callback(subscriber)
         }
 
         func request(_ demand: Subscribers.Demand) {
@@ -40,7 +40,7 @@ private extension TinyNetworkingPublisher {
         }
 
         func cancel() {
-            dataTask?.cancel()
+            task?.cancel()
         }
     }
 }

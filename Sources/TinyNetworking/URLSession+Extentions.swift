@@ -8,32 +8,29 @@
 
 import Foundation
 
-public protocol TinyNetworkingSession {
-    typealias CompletionHandler = (Response, Swift.Error?) -> Void
-    func loadData(
-        with urlRequest: URLRequest,
-        queue: DispatchQueue,
-        completionHandler: @escaping CompletionHandler
-        ) -> URLSessionDataTask
+public protocol HTTPClientSession {
+    
+    typealias CompletionHandler = (HTTPResponse, Swift.Error?) -> Void
+    
+    func loadDataAsync(with urlRequest: URLRequest) async -> (HTTPResponse, Swift.Error?)
 }
 
-extension URLSession: TinyNetworkingSession {
-    public func loadData(
-        with urlRequest: URLRequest,
-        queue: DispatchQueue,
-        completionHandler: @escaping (Response, Swift.Error?) -> Void
-        ) -> URLSessionDataTask {
-        let task = dataTask(with: urlRequest) { data, urlResponse, error in
-            queue.async {
-                let response = Response(
-                    urlRequest: urlRequest,
-                    data: data,
-                    httpURLResponse: urlResponse as? HTTPURLResponse
-                )
-                completionHandler(response, error)
-            }
+extension URLSession: HTTPClientSession {
+    
+    public func loadDataAsync(with urlRequest: URLRequest) async -> (HTTPResponse, Swift.Error?) {
+        do {
+            let response = try await data(for: urlRequest)
+            return (HTTPResponse(
+                urlRequest: urlRequest,
+                data: response.0,
+                httpURLResponse: response.1 as? HTTPURLResponse
+            ), nil)
+        } catch {
+            return (HTTPResponse(
+                urlRequest: urlRequest,
+                data: nil,
+                httpURLResponse: nil
+            ), error)
         }
-        task.resume()
-        return task
     }
 }

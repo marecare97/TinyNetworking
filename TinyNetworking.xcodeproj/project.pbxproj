@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3C04F53947782F8F044C63EE /* Pods_TinyNetworking_RxTinyNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9864C1C8F2DF90B71F954ACE /* Pods_TinyNetworking_RxTinyNetworking.framework */; };
-		C0A67853232A42BE004BD891 /* TinyNetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A67852232A42BE004BD891 /* TinyNetworkingError.swift */; };
 		D904042D243D6BAF00F2FCC0 /* URLEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904042B243D6BAC00F2FCC0 /* URLEncodingTests.swift */; };
 		D9040433243D701600F2FCC0 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9040431243D701000F2FCC0 /* ResponseTests.swift */; };
-		D928143B245EE2DD007BB7E4 /* ParamDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928143A245EE2DD007BB7E4 /* ParamDestination.swift */; };
 		D932E187243F116500EA7CD8 /* URLRequest+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D932E185243F116200EA7CD8 /* URLRequest+ExtensionsTests.swift */; };
 		D932E188243F180900EA7CD8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9894511243EBCB4005D4BD3 /* Models.swift */; };
 		D932E18B243F211700EA7CD8 /* URLSession+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D932E189243F211500EA7CD8 /* URLSession+ExtensionsTests.swift */; };
@@ -26,22 +24,25 @@
 		D9F09C69243AFD9900C25FAE /* TinyNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F09C67243AFD8600C25FAE /* TinyNetworkingTests.swift */; };
 		D9FF6F57243D9DEA005FC9E7 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF6F56243D9DEA005FC9E7 /* EndpointTests.swift */; };
 		D9FF6F59243D9F30005FC9E7 /* TinyNetworking+CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF6F58243D9F30005FC9E7 /* TinyNetworking+CombineTests.swift */; };
-		DC22B61B20794AF600CEB596 /* URLSession+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22B61A20794AF600CEB596 /* URLSession+Extentions.swift */; };
 		DC22B61C207950CE00CEB596 /* TinyNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC320FC6204BFD760055A938 /* TinyNetworking.framework */; };
-		DC320FE4204BFD8E0055A938 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC320FE0204BFD8E0055A938 /* Endpoint.swift */; };
-		DC320FE6204BFD8E0055A938 /* TinyNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC320FE2204BFD8E0055A938 /* TinyNetworking.swift */; };
-		DC320FE7204BFD8E0055A938 /* URLRequest+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC320FE3204BFD8E0055A938 /* URLRequest+Extentions.swift */; };
 		DC581D49204F575200FCBB4E /* RxTinyNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC581D48204F575200FCBB4E /* RxTinyNetworking.swift */; };
-		DC927ACC2070427000B5915E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC927ACB2070427000B5915E /* Task.swift */; };
-		DC927ACE2070427800B5915E /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC927ACD2070427800B5915E /* AnyEncodable.swift */; };
-		DC927AD02070428400B5915E /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC927ACF2070428400B5915E /* ResourceType.swift */; };
-		DC927AD22070428C00B5915E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC927AD12070428C00B5915E /* Response.swift */; };
-		DC9DE1A82058361100BCCA81 /* URL+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9DE1A72058361100BCCA81 /* URL+Extentions.swift */; };
-		DCA8603123F9AEDE001FD1B8 /* TinyNetworkingPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8603023F9AEDE001FD1B8 /* TinyNetworkingPublisher.swift */; };
-		DCA8603323F9AEF0001FD1B8 /* TinyNetworking+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8603223F9AEF0001FD1B8 /* TinyNetworking+Combine.swift */; };
-		DCAED62421A7537C007BDE95 /* URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAED62321A7537C007BDE95 /* URLEncoding.swift */; };
-		DCFD07D5206D7076001F0C35 /* TinyNetworkingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFD07D3206D7076001F0C35 /* TinyNetworkingType.swift */; };
 		E227DFA5CD66DCF947304FE6 /* Pods_TinyNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B6D6B7EB694FA340950D07 /* Pods_TinyNetworking.framework */; };
+		F6C10F162D2DB27300A6F9C7 /* HTTPClient+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F062D2DB27300A6F9C7 /* HTTPClient+Combine.swift */; };
+		F6C10F172D2DB27300A6F9C7 /* HTTPClientTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F0A2D2DB27300A6F9C7 /* HTTPClientTask.swift */; };
+		F6C10F182D2DB27300A6F9C7 /* HTTPEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F0C2D2DB27300A6F9C7 /* HTTPEndpoint.swift */; };
+		F6C10F192D2DB27300A6F9C7 /* URLRequest+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F142D2DB27300A6F9C7 /* URLRequest+Extentions.swift */; };
+		F6C10F1A2D2DB27300A6F9C7 /* ParamDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F112D2DB27300A6F9C7 /* ParamDestination.swift */; };
+		F6C10F1B2D2DB27300A6F9C7 /* HTTPResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F0E2D2DB27300A6F9C7 /* HTTPResourceType.swift */; };
+		F6C10F1C2D2DB27300A6F9C7 /* URL+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F122D2DB27300A6F9C7 /* URL+Extentions.swift */; };
+		F6C10F1D2D2DB27300A6F9C7 /* URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F132D2DB27300A6F9C7 /* URLEncoding.swift */; };
+		F6C10F1E2D2DB27300A6F9C7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F102D2DB27300A6F9C7 /* Logger.swift */; };
+		F6C10F1F2D2DB27300A6F9C7 /* HTTPClientPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F072D2DB27300A6F9C7 /* HTTPClientPublisher.swift */; };
+		F6C10F202D2DB27300A6F9C7 /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F052D2DB27300A6F9C7 /* AnyEncodable.swift */; };
+		F6C10F212D2DB27300A6F9C7 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F0F2D2DB27300A6F9C7 /* HTTPResponse.swift */; };
+		F6C10F222D2DB27300A6F9C7 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F092D2DB27300A6F9C7 /* HTTPClient.swift */; };
+		F6C10F232D2DB27300A6F9C7 /* HTTPClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F0B2D2DB27300A6F9C7 /* HTTPClientType.swift */; };
+		F6C10F242D2DB27300A6F9C7 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F0D2D2DB27300A6F9C7 /* HTTPError.swift */; };
+		F6C10F252D2DB27300A6F9C7 /* URLSession+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C10F152D2DB27300A6F9C7 /* URLSession+Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +63,9 @@
 		8929E43197EB788743E9F8E1 /* Pods-TinyNetworking-RxTinyNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyNetworking-RxTinyNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinyNetworking-RxTinyNetworking/Pods-TinyNetworking-RxTinyNetworking.release.xcconfig"; sourceTree = "<group>"; };
 		9864C1C8F2DF90B71F954ACE /* Pods_TinyNetworking_RxTinyNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyNetworking_RxTinyNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BB9B959956EB7D07FB5338 /* Pods_TinyNetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyNetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A67852232A42BE004BD891 /* TinyNetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyNetworkingError.swift; sourceTree = "<group>"; };
 		C7B6D6B7EB694FA340950D07 /* Pods_TinyNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D904042B243D6BAC00F2FCC0 /* URLEncodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodingTests.swift; sourceTree = "<group>"; };
 		D9040431243D701000F2FCC0 /* ResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTests.swift; sourceTree = "<group>"; };
-		D928143A245EE2DD007BB7E4 /* ParamDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamDestination.swift; sourceTree = "<group>"; };
 		D932E185243F116200EA7CD8 /* URLRequest+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		D932E189243F211500EA7CD8 /* URLSession+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		D932E18C243F249400EA7CD8 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
@@ -82,26 +81,28 @@
 		D9F09C67243AFD8600C25FAE /* TinyNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyNetworkingTests.swift; sourceTree = "<group>"; };
 		D9FF6F56243D9DEA005FC9E7 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 		D9FF6F58243D9F30005FC9E7 /* TinyNetworking+CombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TinyNetworking+CombineTests.swift"; sourceTree = "<group>"; };
-		DC22B61A20794AF600CEB596 /* URLSession+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extentions.swift"; sourceTree = "<group>"; };
 		DC320FC6204BFD760055A938 /* TinyNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TinyNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC320FCA204BFD760055A938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC320FE0204BFD8E0055A938 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		DC320FE2204BFD8E0055A938 /* TinyNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyNetworking.swift; sourceTree = "<group>"; };
-		DC320FE3204BFD8E0055A938 /* URLRequest+Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extentions.swift"; sourceTree = "<group>"; };
 		DC581D40204F573A00FCBB4E /* RxTinyNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxTinyNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC581D43204F573A00FCBB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC581D48204F575200FCBB4E /* RxTinyNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTinyNetworking.swift; sourceTree = "<group>"; };
-		DC927ACB2070427000B5915E /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		DC927ACD2070427800B5915E /* AnyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
-		DC927ACF2070428400B5915E /* ResourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceType.swift; sourceTree = "<group>"; };
-		DC927AD12070428C00B5915E /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		DC9DE1A72058361100BCCA81 /* URL+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extentions.swift"; sourceTree = "<group>"; };
-		DCA8603023F9AEDE001FD1B8 /* TinyNetworkingPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TinyNetworkingPublisher.swift; path = Sources/TinyNetworking/TinyNetworkingPublisher.swift; sourceTree = SOURCE_ROOT; };
-		DCA8603223F9AEF0001FD1B8 /* TinyNetworking+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TinyNetworking+Combine.swift"; path = "Sources/TinyNetworking/TinyNetworking+Combine.swift"; sourceTree = SOURCE_ROOT; };
-		DCAED62321A7537C007BDE95 /* URLEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoding.swift; sourceTree = "<group>"; };
-		DCFD07D3206D7076001F0C35 /* TinyNetworkingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyNetworkingType.swift; sourceTree = "<group>"; };
 		E80D530C0C109729BC53C62F /* Pods_RxTinyNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTinyNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EBD579AAEFD86D690E1216 /* Pods-TinyNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinyNetworking/Pods-TinyNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		F6C10F052D2DB27300A6F9C7 /* AnyEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
+		F6C10F062D2DB27300A6F9C7 /* HTTPClient+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPClient+Combine.swift"; sourceTree = "<group>"; };
+		F6C10F072D2DB27300A6F9C7 /* HTTPClientPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientPublisher.swift; sourceTree = "<group>"; };
+		F6C10F092D2DB27300A6F9C7 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		F6C10F0A2D2DB27300A6F9C7 /* HTTPClientTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTask.swift; sourceTree = "<group>"; };
+		F6C10F0B2D2DB27300A6F9C7 /* HTTPClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientType.swift; sourceTree = "<group>"; };
+		F6C10F0C2D2DB27300A6F9C7 /* HTTPEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPEndpoint.swift; sourceTree = "<group>"; };
+		F6C10F0D2D2DB27300A6F9C7 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		F6C10F0E2D2DB27300A6F9C7 /* HTTPResourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResourceType.swift; sourceTree = "<group>"; };
+		F6C10F0F2D2DB27300A6F9C7 /* HTTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		F6C10F102D2DB27300A6F9C7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F6C10F112D2DB27300A6F9C7 /* ParamDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamDestination.swift; sourceTree = "<group>"; };
+		F6C10F122D2DB27300A6F9C7 /* URL+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extentions.swift"; sourceTree = "<group>"; };
+		F6C10F132D2DB27300A6F9C7 /* URLEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoding.swift; sourceTree = "<group>"; };
+		F6C10F142D2DB27300A6F9C7 /* URLRequest+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extentions.swift"; sourceTree = "<group>"; };
+		F6C10F152D2DB27300A6F9C7 /* URLSession+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extentions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,32 +213,23 @@
 		DC320FC8204BFD760055A938 /* TinyNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				DC3E26F723204A4F00DB55EA /* Combine */,
-				DC927ACB2070427000B5915E /* Task.swift */,
-				C0A67852232A42BE004BD891 /* TinyNetworkingError.swift */,
-				DC320FE0204BFD8E0055A938 /* Endpoint.swift */,
-				DC927ACD2070427800B5915E /* AnyEncodable.swift */,
-				DC927AD12070428C00B5915E /* Response.swift */,
-				DC927ACF2070428400B5915E /* ResourceType.swift */,
-				DC320FE2204BFD8E0055A938 /* TinyNetworking.swift */,
-				DCFD07D3206D7076001F0C35 /* TinyNetworkingType.swift */,
-				DC320FE3204BFD8E0055A938 /* URLRequest+Extentions.swift */,
-				DC9DE1A72058361100BCCA81 /* URL+Extentions.swift */,
-				DC22B61A20794AF600CEB596 /* URLSession+Extentions.swift */,
-				DCAED62321A7537C007BDE95 /* URLEncoding.swift */,
-				DC320FCA204BFD760055A938 /* Info.plist */,
-				D928143A245EE2DD007BB7E4 /* ParamDestination.swift */,
+				F6C10F052D2DB27300A6F9C7 /* AnyEncodable.swift */,
+				F6C10F082D2DB27300A6F9C7 /* Combine */,
+				F6C10F092D2DB27300A6F9C7 /* HTTPClient.swift */,
+				F6C10F0A2D2DB27300A6F9C7 /* HTTPClientTask.swift */,
+				F6C10F0B2D2DB27300A6F9C7 /* HTTPClientType.swift */,
+				F6C10F0C2D2DB27300A6F9C7 /* HTTPEndpoint.swift */,
+				F6C10F0D2D2DB27300A6F9C7 /* HTTPError.swift */,
+				F6C10F0E2D2DB27300A6F9C7 /* HTTPResourceType.swift */,
+				F6C10F0F2D2DB27300A6F9C7 /* HTTPResponse.swift */,
+				F6C10F102D2DB27300A6F9C7 /* Logger.swift */,
+				F6C10F112D2DB27300A6F9C7 /* ParamDestination.swift */,
+				F6C10F122D2DB27300A6F9C7 /* URL+Extentions.swift */,
+				F6C10F132D2DB27300A6F9C7 /* URLEncoding.swift */,
+				F6C10F142D2DB27300A6F9C7 /* URLRequest+Extentions.swift */,
+				F6C10F152D2DB27300A6F9C7 /* URLSession+Extentions.swift */,
 			);
 			path = TinyNetworking;
-			sourceTree = "<group>";
-		};
-		DC3E26F723204A4F00DB55EA /* Combine */ = {
-			isa = PBXGroup;
-			children = (
-				DCA8603023F9AEDE001FD1B8 /* TinyNetworkingPublisher.swift */,
-				DCA8603223F9AEF0001FD1B8 /* TinyNetworking+Combine.swift */,
-			);
-			path = Combine;
 			sourceTree = "<group>";
 		};
 		DC581D41204F573A00FCBB4E /* RxTinyNetworking */ = {
@@ -256,6 +248,15 @@
 				DC581D41204F573A00FCBB4E /* RxTinyNetworking */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		F6C10F082D2DB27300A6F9C7 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				F6C10F062D2DB27300A6F9C7 /* HTTPClient+Combine.swift */,
+				F6C10F072D2DB27300A6F9C7 /* HTTPClientPublisher.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,21 +471,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA8603323F9AEF0001FD1B8 /* TinyNetworking+Combine.swift in Sources */,
-				DC927ACC2070427000B5915E /* Task.swift in Sources */,
-				DC927ACE2070427800B5915E /* AnyEncodable.swift in Sources */,
-				DC9DE1A82058361100BCCA81 /* URL+Extentions.swift in Sources */,
-				DCAED62421A7537C007BDE95 /* URLEncoding.swift in Sources */,
-				D928143B245EE2DD007BB7E4 /* ParamDestination.swift in Sources */,
-				DCFD07D5206D7076001F0C35 /* TinyNetworkingType.swift in Sources */,
-				DC927AD02070428400B5915E /* ResourceType.swift in Sources */,
-				C0A67853232A42BE004BD891 /* TinyNetworkingError.swift in Sources */,
-				DC22B61B20794AF600CEB596 /* URLSession+Extentions.swift in Sources */,
-				DC320FE4204BFD8E0055A938 /* Endpoint.swift in Sources */,
-				DC927AD22070428C00B5915E /* Response.swift in Sources */,
-				DC320FE7204BFD8E0055A938 /* URLRequest+Extentions.swift in Sources */,
-				DC320FE6204BFD8E0055A938 /* TinyNetworking.swift in Sources */,
-				DCA8603123F9AEDE001FD1B8 /* TinyNetworkingPublisher.swift in Sources */,
+				F6C10F162D2DB27300A6F9C7 /* HTTPClient+Combine.swift in Sources */,
+				F6C10F172D2DB27300A6F9C7 /* HTTPClientTask.swift in Sources */,
+				F6C10F182D2DB27300A6F9C7 /* HTTPEndpoint.swift in Sources */,
+				F6C10F192D2DB27300A6F9C7 /* URLRequest+Extentions.swift in Sources */,
+				F6C10F1A2D2DB27300A6F9C7 /* ParamDestination.swift in Sources */,
+				F6C10F1B2D2DB27300A6F9C7 /* HTTPResourceType.swift in Sources */,
+				F6C10F1C2D2DB27300A6F9C7 /* URL+Extentions.swift in Sources */,
+				F6C10F1D2D2DB27300A6F9C7 /* URLEncoding.swift in Sources */,
+				F6C10F1E2D2DB27300A6F9C7 /* Logger.swift in Sources */,
+				F6C10F1F2D2DB27300A6F9C7 /* HTTPClientPublisher.swift in Sources */,
+				F6C10F202D2DB27300A6F9C7 /* AnyEncodable.swift in Sources */,
+				F6C10F212D2DB27300A6F9C7 /* HTTPResponse.swift in Sources */,
+				F6C10F222D2DB27300A6F9C7 /* HTTPClient.swift in Sources */,
+				F6C10F232D2DB27300A6F9C7 /* HTTPClientType.swift in Sources */,
+				F6C10F242D2DB27300A6F9C7 /* HTTPError.swift in Sources */,
+				F6C10F252D2DB27300A6F9C7 /* URLSession+Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
