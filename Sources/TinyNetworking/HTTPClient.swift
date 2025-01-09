@@ -9,6 +9,7 @@
 import Foundation
 import os
 
+@available(iOS 14.0, *)
 public class HTTPClient<R: HTTPResource>: HTTPClientType {
     
     private let logger = Logger(subsystem: Bundle.main.bundleIdentifier!,
