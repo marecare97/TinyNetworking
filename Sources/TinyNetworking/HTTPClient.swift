@@ -54,7 +54,7 @@ public class HTTPClient<R: HTTPResource>: HTTPClientType {
 }
 
 extension Result {
-    var isSuccess: Bool {
+    public var isSuccess: Bool {
         switch self {
         case .success:
             return true
@@ -63,7 +63,7 @@ extension Result {
         }
     }
     
-    var successValue: Success? {
+    public  var successValue: Success? {
         switch self {
         case .success(let value):
             return value
