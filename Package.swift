@@ -3,6 +3,9 @@ import PackageDescription
 
 let package = Package(
     name: "TinyNetworking",
+    platforms: [
+        .iOS(.v14)
+    ]
     products: [
         .library(
             name: "TinyNetworking",
