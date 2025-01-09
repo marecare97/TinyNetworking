@@ -11,7 +11,7 @@
 import Foundation
 import Combine
 
-@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+@available(OSX 10.15, iOS 14.0, tvOS 13.0, watchOS 6.0, *)
 internal class HTTPClientPublisher<Output, Failure>: Publisher where Failure: Swift.Error {
     private let task: (AnySubscriber<Output, Failure>) -> Task<Void, Never>?
 
@@ -25,7 +25,7 @@ internal class HTTPClientPublisher<Output, Failure>: Publisher where Failure: Sw
     }
 }
 
-@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+@available(OSX 10.15, iOS 14.0, tvOS 13.0, watchOS 6.0, *)
 private extension HTTPClientPublisher {
     class Subscription: Combine.Subscription {
 

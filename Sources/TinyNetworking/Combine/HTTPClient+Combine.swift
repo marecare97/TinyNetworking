@@ -11,7 +11,7 @@
 import Foundation
 import Combine
 
-@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+@available(OSX 10.15, iOS 14.0, tvOS 13.0, watchOS 6.0, *)
 public extension HTTPClient {
     
     func requestPublisher(
@@ -36,7 +36,7 @@ public extension HTTPClient {
     }
 }
 
-@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+@available(OSX 10.15, iOS 14.0, tvOS 13.0, watchOS 6.0, *)
 public extension AnyPublisher where Output == HTTPResponse, Failure == HTTPError {
     
     func map<D: Decodable>(to type: D.Type, decoder: JSONDecoder = .init()) -> AnyPublisher<D, HTTPError> {

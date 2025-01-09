@@ -12,7 +12,7 @@ import XCTest
 import Combine
 @testable import TinyNetworking
 
-@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+@available(OSX 10.15, iOS 14.0, tvOS 13.0, watchOS 6.0, *)
 class TinyNetworkingCombineTests: XCTestCase {
     
     var cancellables = Set<AnyCancellable>()
